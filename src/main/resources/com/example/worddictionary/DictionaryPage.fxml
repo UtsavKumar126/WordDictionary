@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="497.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.worddictionary.DictionaryPageController">
+<children>
+      <ImageView fitHeight="497.0" fitWidth="600.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../OneDrive/Desktop/dictionary.jpg" />
+         </image>
+      </ImageView>
+    <Text layoutX="106.0" layoutY="79.0" style="-fx-font-weight:bold;-fx-font-size:50px" underline="true">Word Dictionary</Text>
+    <Text layoutX="104.0" layoutY="129.0" style="-fx-font-weight:bold;-fx-font-size:18px" underline="true">Search The word </Text>
+    <TextField fx:id="search" layoutX="100.0" layoutY="145.0" minHeight="20" minWidth="100" promptText="Enter the Word " />
+    <Button layoutX="300" layoutY="145" onMouseClicked="#searchButton" style="-fx-font-weight:bold" text="Search " />
+
+    <Text layoutX="100.0" layoutY="225.0" style="-fx-font-weight:bold;-fx-font-size:18px" underline="true">Add a new Word </Text>
+    <TextField fx:id="newword" layoutX="100.0" layoutY="240.0" minHeight="20" minWidth="100" promptText="Add the word " />
+    <TextField fx:id="meaning" layoutX="100.0" layoutY="270.0" minHeight="20" minWidth="100" promptText="Add the meaning " />
+    <Button layoutX="300" layoutY="255" onMouseClicked="#Add" style="-fx-font-weight:bold" text="Add" />
+
+    <Text layoutX="100.0" layoutY="365.0" style="-fx-font-weight:bold;-fx-font-size:18px" underline="true">Search the Meaning </Text>
+    <TextField fx:id="findword" layoutX="100.0" layoutY="380.0" minHeight="20" minWidth="100" promptText=" Enter the Word " />
+    <Button layoutX="300" layoutY="380" onMouseClicked="#Meaning" style="-fx-font-weight:bold" text="Find" />
+</children>
+</AnchorPane>
